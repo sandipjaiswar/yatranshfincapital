@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Yatransh Fincapital — Loan Advisory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Yatransh Fincapital — Home Loan, Personal Loan, Business Loan, LAP. Transparent loan advisory & support." />
+
+  <!-- Bootstrap 3 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- Font Awesome (for icons) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    :root {
+      --bg-light: #f5f5f5;
+      --bg-white: #ffffff;
+      --text-main: #1f2933;
+      --accent: #2563eb;
+      --muted: #6b7280;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg-light);
+      color: var(--text-main);
+      padding-top: 82px; /* space for fixed navbar */
+    }
+
+    /* --- Navbar styles --- */
+    .navbar-custom {
+      background: var(--bg-white);
+      border: 0;
+      border-radius: 6px;
+      padding: 10px 14px;
+      transition: box-shadow 0.18s ease, transform 0.18s ease;
+    }
+    .navbar-custom .navbar-brand { padding: 6px 12px; display:flex; align-items:center; gap:10px; }
+    .brand-mark {
+      width:40px; height:40px; border-radius:10px;
+      background: linear-gradient(135deg,#2563eb,#1d4ed8);
+      color:#fff; display:inline-flex; align-items:center; justify-content:center; font-weight:700;
+      font-size:18px;
+    }
+    .brand-title { font-weight:700; display:block; line-height:1; }
+    .brand-sub { font-size:11px; color:var(--muted); display:block; margin-top:2px; }
+
+    .btn-cta { border-radius:999px; padding:7px 14px; font-weight:700; }
+    .btn-ws { background: #f8fafc; border:1px solid #e6e6e9; color:var(--text-main); }
+    .btn-apply { background: var(--accent); color:#fff; border-color:var(--accent); }
+
+    /* Shadow when scrolled */
+    .navbar-shadow { box-shadow: 0 10px 25px rgba(15,23,42,0.08); transform: translateY(-1px); }
+
+    /* Hero */
+    .hero {
+      max-width:1100px;
+      margin: 18px auto 30px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.9));
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 10px 22px rgba(15,23,42,0.04);
+    }
+    .hero h1 { font-size:28px; margin-top:4px; margin-bottom:10px; }
+    .hero p.lead { color:var(--muted); margin-bottom:14px; }
+
+    .pill { display:inline-block; background:#f3f4f6; padding:6px 10px; border-radius:999px; margin:4px 6px 4px 0; font-size:12px; }
+
+    /* Cards / sections */
+    .card-custom { background:var(--bg-white); border-radius:10px; padding:18px; border:1px solid #eef0f2; box-shadow:0 8px 20px rgba(15,23,42,0.04); margin-bottom:18px; }
+    .card-title { font-weight:700; margin-bottom:8px; }
+    .muted { color:var(--muted); }
+
+    /* Contact / footer */
+    .contact-block { padding:18px; border-radius:10px; background:var(--bg-white); border:1px solid #eef0f2; box-shadow:0 8px 20px rgba(15,23,42,0.04); }
+    footer { color:var(--muted); margin-top:30px; text-align:center; padding-bottom:20px; }
+
+    /* Responsive tweaks */
+    @media (max-width: 767px) {
+      .navbar-custom { padding:8px 10px; }
+      .brand-mark { width:34px; height:34px; font-size:16px; }
+      .hero h1 { font-size:22px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- jQuery and Bootstrap JS (Bootstrap 3 requires jQuery 1.x/2.x) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- NAVBAR (fixed top) -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" id="mainNavbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- Mobile toggle -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#yatraNavbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar" style="background:#1f2933"></span>
+          <span class="icon-bar" style="background:#1f2933"></span>
+          <span class="icon-bar" style="background:#1f2933"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">
+          <span class="brand-mark">Y</span>
+          <span style="display:inline-block; vertical-align:middle; min-width:0;">
+            <span class="brand-title">Yatransh Fincapital</span>
+            <span class="brand-sub">Loans | Advisory | Support</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="yatraNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden-xs">
+            <a class="btn btn-ws btn-cta" href="https://wa.me/919967763162" target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-whatsapp"></i>&nbsp; WhatsApp
+            </a>
+          </li>
+          <li class="hidden-xs">
+            <a class="btn btn-apply btn-cta" href="#contact">
+              <i class="fa fa-paper-plane"></i>&nbsp; Apply for Loan
+            </a>
+          </li>
+
+          <!-- Mobile quick links (visible inside collapsed menu) -->
+          <li class="visible-xs-block"><a href="tel:+919967763162"><i class="fa fa-phone"></i> 9967763162</a></li>
+          <li class="visible-xs-block"><a href="mailto:sandipjaiswar@yatranshfincapital.com"><i class="fa fa-envelope"></i> sandipjaiswar@yatranshfincapital.com</a></li>
+          <li class="visible-xs-block"><a href="https://wa.me/919967763162" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
+          <li class="visible-xs-block"><a href="#contact"><i class="fa fa-paper-plane"></i> Apply for Loan</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="row">
+        <div class="col-sm-7">
+          <h1>Get the Right Loan with Clear Guidance & Zero Confusion</h1>
+          <p class="lead">We help individuals and businesses compare lenders, improve eligibility, and get loans approved faster with end-to-end support.</p>
+
+          <div class="visible-xs" style="margin-bottom:10px;">
+            <a class="btn btn-ws btn-cta" href="https://wa.me/919967763162" target="_blank"><i class="fa fa-whatsapp"></i> WhatsApp</a>
+            <a class="btn btn-apply btn-cta" href="#contact"><i class="fa fa-paper-plane"></i> Apply</a>
+          </div>
+
+          <div style="margin-top:12px;">
+            <span class="pill">Home Loan</span>
+            <span class="pill">Personal Loan</span>
+            <span class="pill">Business Loan</span>
+            <span class="pill">Loan Against Property (LAP)</span>
+          </div>
+
+          <p style="margin-top:16px;" class="muted">
+            No charges for the first discussion · Transparent process · Documentation support till disbursal
+          </p>
+
+          <p style="margin-top:8px;">
+            <a href="tel:+919967763162" class="btn btn-apply btn-cta"><i class="fa fa-phone"></i> Book Free Consultation</a>
+            <a href="mailto:sandipjaiswar@yatranshfincapital.com" class="btn btn-ws btn-cta"><i class="fa fa-envelope"></i> Email Us</a>
+          </p>
+        </div>
+
+        <div class="col-sm-5">
+          <div class="card-custom">
+            <h4 class="card-title">Quick Snapshot</h4>
+            <p class="muted">Share your requirement once, we coordinate with multiple banks and NBFCs to find the best fit.</p>
+            <ul class="list-unstyled" style="margin-top:12px;">
+              <li><strong>Loan Types:</strong> Home · Personal · Business · LAP</li>
+              <li><strong>Ticket Size:</strong> ₹1L – ₹5Cr</li>
+              <li><strong>Clients:</strong> Salaried & Self-employed</li>
+            </ul>
+            <p class="muted" style="font-size:12px; margin-top:8px;">*Eligibility depends on income, profile, property & lender policy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Our Services</h3>
+        <p class="muted">We work with multiple banks & NBFCs to get the best possible terms for your profile.</p>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <div class="card-custom">
+          <h4>Home Loan</h4>
+          <p>Purchase, resale, construction & balance transfer solutions. Guidance on eligibility and documentation.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <div class="card-custom">
+          <h4>Personal Loan</h4>
+          <p>Quick unsecured loans for medical, travel, education, or emergencies — offered by multiple lenders.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <div class="card-custom">
+          <h4>Business Loan</h4>
+          <p>Working capital, term loans, and small business funding for MSMEs, traders, and freelancers.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <div class="card-custom">
+          <h4>Loan Against Property (LAP)</h4>
+          <p>Secure funds using residential or commercial property. Competitive rates and longer tenures available.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY CHOOSE US + PROCESS -->
+    <div class="row" style="margin-top:18px;">
+      <div class="col-md-6">
+        <h3>Why Choose Yatransh Fincapital</h3>
+        <div class="card-custom">
+          <ul>
+            <li>Simple explanations — decide with clarity.</li>
+            <li>Compare offers across banks & NBFCs.</li>
+            <li>We assist with documentation & follow-ups.</li>
+            <li>Guidance on improving CIBIL & eligibility.</li>
+            <li>Support till loan disbursal.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <h3>Simple 3-Step Process</h3>
+        <div class="card-custom">
+          <ol style="padding-left:18px;">
+            <li><strong>Understand:</strong> Share income, existing loans, property & purpose.</li>
+            <li><strong>Shortlist:</strong> We match profile with lenders and present options with EMI estimates.</li>
+            <li><strong>Support:</strong> Documentation help and coordination till disbursal.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHO WE SERVE -->
+    <div class="row" style="margin-top:18px;">
+      <div class="col-md-12">
+        <h3>Who We Serve</h3>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card-custom">
+          <h4>Salaried Individuals</h4>
+          <p>Professionals in private/public companies or MNCs seeking home, personal, or top-up loans.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card-custom">
+          <h4>Self-employed & Business Owners</h4>
+          <p>Traders, freelancers, and small business owners looking for business funding or LAP.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card-custom">
+          <h4>Existing Loan Holders</h4>
+          <p>People wanting balance transfer, restructuring, or to reduce EMIs via better offers.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="row" id="contact" style="margin-top:22px;">
+      <div class="col-md-8">
+        <div class="contact-block">
+          <h3>Contact Us</h3>
+          <p class="muted">Share some basic details and we'll get back to you. No charges for the first discussion.</p>
+          <p><strong>Phone:</strong> <a href="tel:+919967763162">9967763162</a></p>
+          <p><strong>Email:</strong> <a href="mailto:sandipjaiswar@yatranshfincapital.com">sandipjaiswar@yatranshfincapital.com</a></p>
+          <p><strong>Location:</strong> Mumbai, Maharashtra</p>
+          <p class="muted">Available Mon–Sat · 10 AM – 7 PM</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-custom">
+          <h4>Quick Links</h4>
+          <p><a href="https://wa.me/919967763162" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp"></i> WhatsApp Us</a></p>
+          <p><a href="#services"><i class="fa fa-list"></i> View Services</a></p>
+          <p><a href="tel:+919967763162"><i class="fa fa-phone"></i> Call Now</a></p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© <span id="year"></span> Yatransh Fincapital · Loan Advisory & DSA Services</p>
+    </footer>
+
+  </div> <!-- /container -->
+
+  <script>
+    // Set year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Add shadow to navbar on scroll
+    (function() {
+      var $nav = $('#mainNavbar');
+      function updateNav() {
+        if (window.scrollY > 8) {
+          $nav.addClass('navbar-shadow');
+        } else {
+          $nav.removeClass('navbar-shadow');
+        }
+      }
+      // Run on load and on scroll
+      updateNav();
+      $(window).on('scroll', updateNav);
+    })();
+  </script>
+</body>
+</html>
