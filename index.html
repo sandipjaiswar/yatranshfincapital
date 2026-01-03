@@ -28,6 +28,120 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="assets/css/common.css">
+  <style>
+    .logo-slider {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      background: #fff;
+    }
+
+    .logo-track {
+      display: flex;
+      width: calc(200px * 16);
+      /* logo width × total logos */
+      animation: scroll 45s linear infinite;
+    }
+
+    .logo-track img {
+      height: 40px;
+      margin: 0 40px;
+      filter: grayscale(100%);
+      opacity: 0.85;
+      transition: all 0.3s ease;
+    }
+
+    .logo-track img:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .logo-track>img {
+      width: 100px;
+    }
+
+    @media (max-width: 768px) {
+      .logo-track {
+        animation: scroll 50s linear infinite;
+        /* slower */
+      }
+
+      .logo-track img {
+        height: 42px;
+        margin: 0 24px;
+        width: 90px;
+      }
+    }
+
+    .logo-slider:hover .logo-track,
+    .logo-slider:active .logo-track {
+      animation-play-state: paused;
+    }
+
+    .logo-slider::before,
+    .logo-slider::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 40px;
+      height: 100%;
+      z-index: 2;
+    }
+
+    .logo-slider::before {
+      left: 0;
+      background: linear-gradient(to right, #fff, transparent);
+    }
+
+    .logo-slider::after {
+      right: 0;
+      background: linear-gradient(to left, #fff, transparent);
+    }
+
+    .service-card {
+      display: block;
+      text-align: center;
+      background: #fff;
+      padding: 28px 20px;
+      border-radius: 14px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      text-decoration: none;
+      color: #222;
+      height: 100%;
+      transition: all 0.3s ease;
+    }
+
+    .service-card h5 {
+      font-weight: 600;
+      margin-top: 15px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: #6c757d;
+      margin-bottom: 0;
+    }
+
+    .service-card .icon {
+      font-size: 32px;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+      border-color: transparent;
+    }
+  </style>
 </head>
 
 <body>
@@ -103,12 +217,48 @@
     </div>
   </section>
 
-  <section id="partners" style="padding:50px 0; background:#f8f9fa;">
-    <div class="container text-center">
 
-      <!-- <h3 style="font-weight:600; margin-bottom:10px;">
-      Our Banking & NBFC Partners
-    </h3> -->
+
+  <section id="partners" style="padding:50px 0; background:#f8f9fa;" class="my-5 text-center">
+    <h3 style="font-weight:600; margin-bottom:10px;">
+      Partnered with Banks & NBFCs
+    </h3>
+    <p style="color:#666; margin-bottom:30px;">
+      We are partnered with leading Banks and NBFCs to offer competitive interest rates and faster approvals.
+    </p>
+    <div class="container">
+      <div class="logo-slider">
+        <div class="logo-track">
+          <!-- LOGOS (repeat same set twice) -->
+          <img src="assets/banks/hdfc.png" alt="HDFC">
+          <img src="assets/banks/icici.png" alt="ICICI">
+          <img src="assets/banks/axis.png" alt="Axis">
+          <img src="assets/banks/kotak.png" alt="Kotak">
+          <img src="assets/banks/bajaj.png" alt="Bajaj">
+          <img src="assets/banks/tata.png" alt="Tata Capital">
+          <img src="assets/banks/adityabirla.jpeg" alt="Aditya Birla">
+          <img src="assets/banks/idfc.jpg" alt="IDFC">
+
+          <!-- DUPLICATE -->
+          <img src="assets/banks/hdfc.png" alt="HDFC">
+          <img src="assets/banks/icici.png" alt="ICICI">
+          <img src="assets/banks/axis.png" alt="Axis">
+          <img src="assets/banks/kotak.png" alt="Kotak">
+          <img src="assets/banks/bajaj.png" alt="Bajaj">
+          <img src="assets/banks/tata.png" alt="Tata Capital">
+          <img src="assets/banks/adityabirla.jpeg" alt="Aditya Birla">
+          <img src="assets/banks/idfc.jpg" alt="IDFC">
+        </div>
+      </div>
+      <a href="/bank-nbfc-partners.html" class="partner-link">
+        View all our Bank &amp; NBFC Partners →
+      </a>
+    </div>
+  </section>
+
+  <!-- Disabled element -->
+  <section id="partners" style="padding:50px 0; background:#f8f9fa;display: none;">
+    <div class="container text-center">
       <h3 style="font-weight:600; margin-bottom:10px;">
         Partnered with Banks & NBFCs
       </h3>
@@ -170,9 +320,46 @@
     </div>
   </section>
 
+  <section class="container my-5">
+    <h3 class="text-center fw-bold mb-4">Our Services</h3>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-md-3">
+        <a href="/personal-loan.html" class="service-card">
+          <div class="icon">💳</div>
+          <h5>Personal Loan</h5>
+          <p>Quick loans with minimal documentation</p>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <a href="/business-loan.html" class="service-card">
+          <div class="icon">🏢</div>
+          <h5>Business Loan</h5>
+          <p>Funding solutions to grow your business</p>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <a href="/home-loan.html" class="service-card">
+          <div class="icon">🏠</div>
+          <h5>Home Loan</h5>
+          <p>Affordable home financing options</p>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <a href="/cibil-support.html" class="service-card">
+          <div class="icon">📊</div>
+          <h5>CIBIL Support</h5>
+          <p>Improve and rebuild your credit score</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- Services Section -->
-  <section class="py-5 bg-light">
+  <section class="py-5 bg-light d-none">
     <div class="container">
       <h3 class="text-center fw-bold mb-4">Our Services</h3>
 
@@ -230,7 +417,7 @@
 
     <!-- <div class="panel-body"> -->
 
-    <section class="bg-light" style="background:#f5f7fa;">
+    <section class="bg-light" style="background:#f5f7fa;padding-top: 20px;">
       <div class="container">
         <div class="row">
           <div class="">
@@ -398,7 +585,7 @@
     Andheri East,
     Mumbai - 400069
     </p> -->
-      © 2025 Yatransh Fincapital • Mumbai <br>
+      © 2026 Yatransh Fincapital • Mumbai <br>
       <!-- <div class="text-center" style="margin:12px 0; font-size:13px;">
       <a href="/privacy-policy.html" style="color:#bbb; margin-right:12px;">
         Privacy Policy

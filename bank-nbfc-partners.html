@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Partnered Banks & NBFCs | Trusted Loan Partners</title>
-  <meta name="description" content="We are partnered with leading Banks and NBFCs to help you get the best loan options with higher approval chances." />
+  <meta name="description"
+    content="We are partnered with leading Banks and NBFCs to help you get the best loan options with higher approval chances." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-  <meta http-equiv="Pragma" content="no-cache"/>
-  <meta http-equiv="Expires" content="0"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <link rel="icon" type="image/png" sizes="48x48" href="https://yatranshfincapital.com/favicon-48.png">
   <link rel="icon" type="image/png" sizes="96x96" href="https://yatranshfincapital.com/favicon-96.png">
   <link rel="icon" href="https://yatranshfincapital.com/favicon.ico">
@@ -20,9 +22,8 @@
 
 
   <!-- Bootstrap 3.4.1 CSS -->
-<link rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/common.css">
 
   <style>
     body {
@@ -32,26 +33,32 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       color: #222;
       line-height: 1.6;
     }
+
     .container {
       max-width: 1100px;
       margin: auto;
     }
-    h1, h2 {
+
+    h1,
+    h2 {
       text-align: center;
       margin-bottom: 10px;
     }
+
     .subtext {
       text-align: center;
       color: #666;
       max-width: 800px;
       margin: 0 auto 40px;
     }
+
     .section-title {
       margin-top: 50px;
       margin-bottom: 20px;
       text-align: center;
       font-size: 24px;
     }
+
     .logo-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -59,6 +66,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       align-items: center;
       margin-top: 20px;
     }
+
     .logo-box {
       text-align: center;
       padding: 20px;
@@ -66,28 +74,34 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       border-radius: 8px;
       background: #fafafa;
     }
+
     .logo-box img {
       max-height: 60px;
       max-width: 180px;
       object-fit: contain;
     }
+
     .logo-name {
       margin-top: 10px;
       font-weight: 600;
       font-size: 14px;
     }
+
     .benefits {
       max-width: 800px;
       margin: 40px auto;
     }
+
     .benefits ul {
       list-style: none;
       padding: 0;
     }
+
     .benefits li {
       padding: 10px 0;
       border-bottom: 1px solid #eee;
     }
+
     .cta {
       background: #f4f8ff;
       padding: 40px 20px;
@@ -95,6 +109,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       margin-top: 60px;
       border-radius: 10px;
     }
+
     .cta a {
       display: inline-block;
       margin: 10px;
@@ -105,18 +120,95 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       border-radius: 6px;
       font-weight: 600;
     }
+
     .cta a.whatsapp {
       background: #25d366;
     }
+
     .disclaimer {
       font-size: 13px;
       color: #777;
       margin-top: 40px;
       text-align: center;
     }
+
     @media (max-width: 600px) {
       h1 {
         font-size: 26px;
+      }
+    }
+
+    .partners-section {
+      /* padding: 80px 20px; */
+      background: #fafafa;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 40px;
+    }
+
+    .mt-60 {
+      margin-top: 60px;
+    }
+
+    /* Grid */
+    .partner-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      align-items: center;
+    }
+
+    /* Card */
+    .partner-card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 30px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .partner-card img {
+      max-height: 45px;
+      max-width: 160px;
+      object-fit: contain;
+      filter: grayscale(20%);
+      transition: all 0.3s ease;
+    }
+
+    /* Hover Effects */
+    .partner-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    }
+
+    .partner-card:hover img {
+      filter: grayscale(0%);
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .section-title {
+        font-size: 24px;
+      }
+
+      .partner-card {
+        height: 100px;
+        padding: 20px;
       }
     }
   </style>
@@ -124,80 +216,87 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 <body>
 
-    <header class="site-header">
-        <div class="container">
-          <div class="row" style="display:flex; align-items:center;">
-      
-            <!-- Logo -->
-            <div class="col-xs-6 logo-text d-flex align-items-center">
-              <a href="/" style="text-decoration:none; color:#111;">
-                <img src="assets/logo.png" alt="Yatransh Fincapital"
-                     style="height:40px; vertical-align:middle;">
-              </a>
-              <div class="brand-text">
-                <div class="brand-name">Yatransh</div> <!--Fincapital-->
-                <div class="brand-tagline">Personal • Business • Home Loans</div>
-              </div>
-            </div>
-      
-            <!-- Social Icons -->
-            <div class="col-xs-6 text-right">
-              <a href="https://wa.me/9967763162?text=Hi%20Yatransh%20Fincapital,%20I%20want%20to%20check%20loan%20eligibility.%0AIncome:%0ALoan%20Type:%0ACIBIL:%0ACity:"
-                 target="_blank"
-                 style="margin-left:12px; color:#25D366; font-size:1.7em;"
-                 aria-label="WhatsApp">
-                <i class="fab fa-whatsapp" style="font-size:1.7em;"></i>
-              </a>
-      
-              <!-- <a href="https://instagram.com/yatransh_fincapital"
+  <header class="site-header">
+    <div class="container">
+      <div class="row" style="display:flex; align-items:center;">
+
+        <!-- Logo -->
+        <div class="col-xs-6 logo-text d-flex align-items-center">
+          <a href="/" style="text-decoration:none; color:#111;">
+            <img src="assets/logo.png" alt="Yatransh Fincapital" style="height:40px; vertical-align:middle;">
+          </a>
+          <div class="brand-text">
+            <div class="brand-name">Yatransh</div> <!--Fincapital-->
+            <div class="brand-tagline">Personal • Business • Home Loans</div>
+          </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="col-xs-6 text-right">
+          <a href="https://wa.me/9967763162?text=Hi%20Yatransh%20Fincapital,%20I%20want%20to%20check%20loan%20eligibility.%0AIncome:%0ALoan%20Type:%0ACIBIL:%0ACity:"
+            target="_blank" style="margin-left:12px; color:#25D366; font-size:1.7em;" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp" style="font-size:1.7em;"></i>
+          </a>
+
+          <!-- <a href="https://instagram.com/yatransh_fincapital"
                  target="_blank"
                  style="margin-left:12px; color:#E4405F; font-size:1.7em;"
                  aria-label="Instagram">
                 <i class="fab fa-instagram" style="font-size:1.7em;"></i>
               </a> -->
-            </div>
-      
-          </div>
         </div>
-      </header>
+
+      </div>
+    </div>
+  </header>
+
+
+
   <div class="container">
 
     <h1>Partnered Banks & NBFCs</h1>
     <p class="subtext">
-      We work with India’s leading Banks and NBFCs to help customers get the most suitable loan options based on eligibility, income profile, and CIBIL score.
+      We work with India’s leading Banks and NBFCs to help customers get the most suitable loan options based on
+      eligibility, income profile, and CIBIL score.
     </p>
+    <section class="partners-section">
+      <div class="" style="padding: 1px 16px;padding-bottom: 16px;">
 
-    <h2 class="section-title">Our Banking Partners</h2>
-    <div class="logo-grid">
-      <div class="logo-box"><img src="assets/banks/hdfc.png" alt="HDFC Bank">
-        <!-- <div class="logo-name">HDFC Bank</div> -->
-    </div>
-      <div class="logo-box"><img src="assets/banks/icici.png" alt="ICICI Bank">
-        <!-- <div class="logo-name">ICICI Bank</div> -->
-    </div>
-      <div class="logo-box"><img src="assets/banks/axis.png" alt="Axis Bank">
-        <!-- <div class="logo-name">Axis Bank</div> -->
-    </div>
-      <div class="logo-box"><img src="assets/banks/kotak.png" alt="Kotak Mahindra Bank">
-        <!-- <div class="logo-name">Kotak Mahindra Bank</div> -->
-    </div>
-      <div class="logo-box"><img src="assets/banks/idfc.jpg" alt="IDFC First Bank">
-        <!-- <div class="logo-name">IDFC First Bank</div> -->
-    </div>
-    </div>
+        <h3 class="section-title">Our Banking Partners</h3>
 
-    <h2 class="section-title">Our NBFC Partners</h2>
-    <div class="logo-grid">
-      <div class="logo-box"><img src="assets/banks/bajaj.png" alt="Bajaj Finserv">
-        <!-- <div class="logo-name">Bajaj Finserv</div> -->
-    </div>
-      <div class="logo-box"><img src="assets/banks/tata.png" alt="Tata Capital">
-        <!-- <div class="logo-name">Tata Capital</div> -->
-    </div>
-      <div class="logo-box"><img src="assets/banks/adityabirla.jpeg" alt="Aditya Birla Capital">
-        <!-- <div class="logo-name">Aditya Birla Capital</div> -->
-    </div>
-    </div>
+        <div class="partner-grid">
+          <div class="partner-card">
+            <img src="assets/banks/hdfc.png" alt="HDFC Bank">
+          </div>
+          <div class="partner-card">
+            <img src="assets/banks/icici.png" alt="ICICI Bank">
+          </div>
+          <div class="partner-card">
+            <img src="assets/banks/axis.png" alt="Axis Bank">
+          </div>
+          <div class="partner-card">
+            <img src="assets/banks/kotak.png" alt="Kotak Mahindra Bank">
+          </div>
+          <div class="partner-card">
+            <img src="assets/banks/idfc.jpg" alt="IDFC First Bank">
+          </div>
+        </div>
+
+        <h3 class="section-title mt-60">Our NBFC Partners</h3>
+
+        <div class="partner-grid">
+          <div class="partner-card">
+            <img src="assets/banks/bajaj.png" alt="Bajaj Finserv">
+          </div>
+          <div class="partner-card">
+            <img src="assets/banks/tata.png" alt="Tata Capital">
+          </div>
+          <div class="partner-card">
+            <img src="assets/banks/adityabirla.jpeg" alt="Aditya Birla Capital">
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="benefits">
       <h2 class="section-title">Why Choose Us</h2>
@@ -213,11 +312,13 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <div class="cta">
       <h2>Ready to Check Your Loan Eligibility?</h2>
       <a href="/#eligibility">Check Loan Eligibility</a>
-      <a href="https://wa.me/9967763162" class="whatsapp">Talk on WhatsApp <i class="fab fa-whatsapp" style="font-size:1.7em;margin-left: 4px;"></i></a>
+      <a href="https://wa.me/9967763162" class="whatsapp">Talk on WhatsApp <i class="fab fa-whatsapp"
+          style="font-size:1.7em;margin-left: 4px;"></i></a>
     </div>
 
     <p class="disclaimer">
-      *We are not a bank or NBFC. Bank and NBFC logos are used for informational purposes only. Loan approval, interest rate, tenure, and final terms are subject to the respective bank/NBFC policies and customer eligibility.*
+      *We are not a bank or NBFC. Bank and NBFC logos are used for informational purposes only. Loan approval, interest
+      rate, tenure, and final terms are subject to the respective bank/NBFC policies and customer eligibility.*
     </p>
 
   </div>
@@ -260,7 +361,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     Andheri East,
     Mumbai - 400069
     </p> -->
-      © 2025 Yatransh Fincapital • Mumbai <br>
+      © 2026 Yatransh Fincapital • Mumbai <br>
       <!-- <div class="text-center" style="margin:12px 0; font-size:13px;">
       <a href="/privacy-policy.html" style="color:#bbb; margin-right:12px;">
         Privacy Policy
@@ -274,19 +375,19 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       Disclaimer: Loan approval, ROI & amount depend on bank/NBFC policies.
     </small>
   </footer>
-  
+
   <!-- WhatsApp Floating Button -->
   <a class="whatsapp-btn"
-     href="https://wa.me/9967763162?text=Hi%20Yatransh%20Fincapital,%20I%20want%20to%20check%20loan%20eligibility.%0AIncome:%0ALoan%20Type:%0ACIBIL:%0ACity:"
-     target="_blank">💬</a>
+    href="https://wa.me/9967763162?text=Hi%20Yatransh%20Fincapital,%20I%20want%20to%20check%20loan%20eligibility.%0AIncome:%0ALoan%20Type:%0ACIBIL:%0ACity:"
+    target="_blank">💬</a>
 
 
-      <!-- jQuery (required for Bootstrap 3 JS) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- jQuery (required for Bootstrap 3 JS) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<!-- Bootstrap 3.4.1 JS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script type="application/ld+json">
+  <!-- Bootstrap 3.4.1 JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -296,4 +397,5 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   }
   </script>
 </body>
+
 </html>
